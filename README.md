@@ -1152,7 +1152,8 @@ ubcdfghj
 ```
 awk -f nc.awk data.dat
 ## OUTPUT 
- 
+![image](https://github.com/user-attachments/assets/209171aa-f009-4f76-b623-c8b364c8f21a)
+
 cat > palindrome.sh
 ```bash
 #num=545
@@ -1179,6 +1180,7 @@ else
 fi
 ```
 ## OUTPUT 
+![image](https://github.com/user-attachments/assets/c67d9c34-9a34-4dba-a619-589ee9ceca73)
 
 
 # RESULT:
