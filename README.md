@@ -261,79 +261,96 @@ cat > file23
 
 sed -n -e '3p' file23
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/c2ce5a93-5668-406c-a9c1-84bf3754db39)
 
 
 
 sed -n -e '$p' file23
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/8364bc33-4a9f-4159-ad02-af8b07cfa6d3)
 
 
 
 sed  -e 's/Ram/Sita/' file23
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/9228794d-8a6e-4cff-be5f-cf1039db1ed8)
 
 
 
 sed  -e '2s/Ram/Sita/' file23
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/ca777e2e-1a54-4005-b7b3-bd7821535088)
 
 
 
 sed  '/tom/s/5000/6000/' file23
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/ce747184-bfa9-43b1-afa6-f78bfd1e8abb)
 
 
 
 sed -n -e '1,5p' file23
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/ab460fd6-0660-4086-b2cf-0ddb568f9d7a)
 
 
 
 sed -n -e '2,/Joe/p' file23
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/1060fffe-7270-4177-afd9-35174a759c83)
 
 
 
 
 sed -n -e '/tom/,/Joe/p' file23
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/8e631c64-d22e-4dd4-a5aa-ad7a4b805bc4)
 
 
 
 seq 10 
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/039b436a-8ce8-43ce-a19a-50529d276d87)
 
 
 
 seq 10 | sed -n '4,6p'
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/0446a37b-d933-4a62-b80b-0343a6bffb7d)
 
 
 
 seq 10 | sed -n '2,~4p'
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/966bff2f-6c65-4ddd-b8e8-ee600752b064)
 
 
 
 seq 3 | sed '2a hello'
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/096a7214-6145-4a00-b974-88af55b560fe)
 
 
 
 seq 2 | sed '2i hello'
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/2cefa889-0a78-4333-ac13-97f748021c3b)
 
 
 seq 10 | sed '2,9c hello'
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/c5562130-1224-4718-9bde-1593cf9f541a)
 
 
 sed -n '2,4{s/^/$/;p}' file23
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/1a4b9649-70a5-4415-adbc-3c5f555e746f)
 
 
 
 sed -n '2,4{s/$/*/;p}' file23
+## OUTPUT
+![image](https://github.com/user-attachments/assets/c47d7762-0c14-45c9-a6ed-531552035674)
 
 
 #Sorting File content
@@ -347,6 +364,7 @@ cat > file21
 ``` 
 sort file21
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/1c75ce5d-8eb5-450c-8e8e-7dc22a322cc6)
 
 
 cat > file22
@@ -360,6 +378,7 @@ cat > file22
 ``` 
 uniq file22
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/cfe9c371-e39e-4eaa-baaf-d3b617c9c403)
 
 
 
@@ -367,6 +386,8 @@ uniq file22
 
 cat file23 | tr [:lower:] [:upper:]
  ## OUTPUT
+![image](https://github.com/user-attachments/assets/39621e59-7e7d-4a5f-b2b0-71d0077080e0)
+
 
 cat < urllist.txt
 ```
@@ -383,17 +404,20 @@ www. mrcet.... com
  ```
 cat urllist.txt | tr -d ' '
  ## OUTPUT
+![image](https://github.com/user-attachments/assets/6e523c66-2a83-4c16-a19c-faeb11b9b11c)
 
 
  
 cat urllist.txt | tr -d ' ' | tr -s '.'
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/5637df83-3650-4995-b77b-19762d604b2b)
 
 
 
-#Backup commands
+## Backup commands
 tar -cvf backup.tar *
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/af83ce0c-e18b-4be3-8416-8bbdee59d907)
 
 
 mkdir backupdir
@@ -402,18 +426,25 @@ mv backup.tar backupdir
  
 tar -tvf backup.tar
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/4f102ba9-53e9-4a0e-9ebb-0c24413fc87d)
 
 
 tar -xvf backup.tar
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/98ea7d57-4da9-4d24-a68c-013f91e55229)
+
 
 gzip backup.tar
 
 ls .gz
 ## OUTPUT
- 
+![image](https://github.com/user-attachments/assets/e54af9c7-1ac4-4bed-a203-c6b780523329)
+
+
+
 gunzip backup.tar.gz
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/079e2bbb-e95b-4761-bd61-789f1a3dd55f)
 
  
 # Shell Script
